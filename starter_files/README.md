@@ -62,6 +62,23 @@ Next used Apache Benchmark to run a benchmark against the endpoint to ensure it 
 ![Benchmark Output1](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/benchmark%20output%201.PNG?raw=true)
 ![Benchmark Output2](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/benchmark%20output%202.PNG?raw=true)
 
+### Create and publish a pipeline <a name="publish" />
+Next I used a aml-pipelines-with-automated-machine-learning-step.ipynb to create and publish the whole pipeline. In the notebook, we first import the various libraries and packages we'll need, mostly from the Azure SDK. Then we connect to the Azure Workspace and search for a compute cluster, creating one if it doesn't exist. We also check to see if the Bankmarketing dataset is uploaded and upload it if it isn't. Then we configure an AutoML Step which will perform an AutoML search for an optimal model as described in [Section 2](#automl). The full pipeline is then set up using this AutoML step with the dataset being fed into it. The notebook runs the pipeline and does some testing of model results to ensure it's working.
+
+Here we see the pipeline:
+![Pipelines](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/10%20pipeline%20created.png?raw=true)
+
+After the pipeline has been created, we use the Azure SDK and our notebook to publish it to a REST endpoint. This will allow us to run the pipeline using a simple REST API call.
+
+The published endpoint:
+![Pipeline Endpoints](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/11%20pipeline%20endpoints.png?raw=true)
+
+Details of the published pipeline endpoint, including the REST URL:
+![Published Pipeline](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/Published%20Pipeline.PNG?raw=true)
+
+Lastly, in the notebook we make a REST call using a POST to make sure the pipeline kicks off as we expect it to. Once it's running, we can check in on the run's progress both through the Azure ML Studio UI and the RunDetails widget in our notebook.
+
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
