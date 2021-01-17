@@ -52,6 +52,16 @@ You can see exactly what fields are expected and get an idea for the data type o
 
 ![Swagger UI](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/swagger%20ui.PNG?raw=true)
 
+### Consume Model Endpoint <a name="consume" />
+Next, run a simple endpoint.py using the data format shown in Swagger to ensure that the endpoint could actually be consumed by an application. Below we can see the response that the endpoint returned
+
+![Endpoint Output](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/endpoint%20output.PNG?raw=true)
+
+Next used Apache Benchmark to run a benchmark against the endpoint to ensure it runs efficiently. We can see in the benchmark output that none of the 10 requests failed and that they all came back extremely quickly.
+
+![Benchmark Output1](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/benchmark%20output%201.PNG?raw=true)
+![Benchmark Output2](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/benchmark%20output%202.PNG?raw=true)
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
