@@ -74,10 +74,12 @@ The published endpoint:
 ![Pipeline Endpoints](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/11%20pipeline%20endpoints.png?raw=true)
 
 Details of the published pipeline endpoint, including the REST URL:
-![Published Pipeline](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/Published%20Pipeline.PNG?raw=true)
+![Published Pipeline](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/Published%20Pipeline.png?raw=true)
 
 Lastly, in the notebook we make a REST call using a POST to make sure the pipeline kicks off as we expect it to. Once it's running, we can check in on the run's progress both through the Azure ML Studio UI and the RunDetails widget in our notebook.
 
+view of the pipeline running from the RunDetails widget in Jupyter Notebook:
+![RunDetails Run](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/14%20pipeline%20runwidget.png?raw=true)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
