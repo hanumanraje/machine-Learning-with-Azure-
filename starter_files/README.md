@@ -33,6 +33,17 @@ Next, AutoML Classification experiment using the Azure ML AutoML UI. This experi
 
 The best model from this AutoML experiment, which turned out to be a VotingEnsemble model. This makes sense since Voting Ensembles take the output from several different types of classification modles and gives them a weighted vote to get the classifaction decision.
 
+### Deploy the Best Model <a name="best_model" />
+Now that the best model was identified, deployed it as a REST endpoint by simply clicking the 'Deploy' button in the Azure ML Studio from the Model details UI.
+
+![alt text](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/4%20endpoint%20deployed.png?raw=true)
+
+### Enable Logging <a name="logging" />
+To enable logging, I use a python [logging script](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/logs.py) that turned on the 'Application Insights' for the deployed endpoint and output the logs. In the first screenshot below, you can see the endpoint shows 'Application Insights enabled' is true, and the second shows the log output. These logs let you see details about how well the endpoint is running.
+[Application Insights On](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/6%20app%20insight%20enabled.png?raw=true)
+![Log output](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/5%20logs.py.png?raw=true)
+
+
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
