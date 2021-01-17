@@ -1,12 +1,23 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 
-# Your Project Title Here
+# Operationalizing Machine Learning Project
 
-*TODO:* Write an overview to your project.
+In this project, I use AutoML to train lots of models on the Bank Marketing dataset and deploy the best one to a REST endpoint that can be consumed by other applications. I then create a pipeline using the Azure SDK that will automate the model training process. This pipeline is itself deployed to an endpoint so it can be started with a simple REST API call.
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+
+https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/Flow.png
+For this project, there are 8 steps:
+
+1. Authentication
+2. Automated ML Experiment
+3. Deploy the best model
+4. Enable logging
+5. Swagger Documentation
+6. Consume model endpoints
+7. Create and publish a pipeline
+8. Documentation 
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
