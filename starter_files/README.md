@@ -40,9 +40,17 @@ Now that the best model was identified, deployed it as a REST endpoint by simply
 
 ### Enable Logging <a name="logging" />
 To enable logging, I use a python [logging script](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/logs.py) that turned on the 'Application Insights' for the deployed endpoint and output the logs. In the first screenshot below, you can see the endpoint shows 'Application Insights enabled' is true, and the second shows the log output. These logs let you see details about how well the endpoint is running.
-[Application Insights On](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/6%20app%20insight%20enabled.png?raw=true)
+![Application Insights On](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/6%20app%20insight%20enabled.png?raw=true)
 ![Log output](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/5%20logs.py.png?raw=true)
 
+### Swagger Documentation <a name="swagger" />
+Next,deployed a Swagger UI docker container and a simple server to be able to display the swagger documentation for this endpoint using the 
+swagger.sh and serve.py scripts. 
+We can use this UI to see what GETs and POSTs can be performed on the endpoint. 
+In addition, it allows you to see the correct JSON format for the POST if we want to get inference results from our model. 
+You can see exactly what fields are expected and get an idea for the data type of each field (ie dates, strings, ints, etc).
+
+![Swagger UI](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/swagger%20ui.PNG?raw=true)
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
