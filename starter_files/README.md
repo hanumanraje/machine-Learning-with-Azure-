@@ -6,8 +6,9 @@
 In this project, I use AutoML to train lots of models on the Bank Marketing dataset and deploy the best one to a REST endpoint that can be consumed by other applications. I then create a pipeline using the Azure SDK that will automate the model training process. This pipeline is itself deployed to an endpoint so it can be started with a simple REST API call.
 
 ## Architectural Diagram
+https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/Flow.png?raw=true
 
-https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/Flow.png
+
 For this project, there are 8 steps:
 
 1. Authentication
