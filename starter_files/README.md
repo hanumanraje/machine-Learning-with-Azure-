@@ -1,5 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 
 # Operationalizing Machine Learning Project
 
@@ -81,8 +79,11 @@ Lastly, in the notebook we make a REST call using a POST to make sure the pipeli
 view of the pipeline running from the RunDetails widget in Jupyter Notebook:
 ![RunDetails Run](https://github.com/hanumanraje/machine-Learning-with-Azure-/blob/master/starter_files/ScreenShoot/14%20pipeline%20runwidget.png?raw=true)
 
-## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
+### Documentation <a name="docs">
+I created documentation in the form of this README file.
+  
+## Suggestions for Future Work 
+For future work, I would suggest making further tweaks to the AutoML step of the pipeline. There are a lot of settings involved and making changes to them could improve the search space and help find an even better model solution. There are also additional steps that could be added to the pipeline, perhaps doing some dataset cleanup or feature engineering before the AutoML step, or doing additional steps after the AutoML step has completed.
 
 ## Standout Suggestions
 *TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
